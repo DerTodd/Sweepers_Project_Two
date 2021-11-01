@@ -42,13 +42,13 @@ body {
 
 #btnLog {
     padding: 3vh 34vh 3vh 34vh;
-    border-radius: 25px;
+    border-radius: 25em;
     
 }
 
 #newAcc {
     padding: 3vh 20vh 3vh 20vh;
-    border-radius: 25px;
+    border-radius: 25em;
 }
 
 #emInput {
@@ -59,4 +59,8 @@ body {
     margin-left: 20vh;
     margin-right: 20vh;
     background-color: #1797A6;
+}
+
+#user_name {
+    background-color: white;
 }
