@@ -8,8 +8,10 @@ root {
 h1 {
     text-align: center;
     color:#F2F2F2;
+
     margin-bottom: 20vh;
     font-family: ;
+
 }
 
 h2 {
@@ -20,6 +22,7 @@ h2 {
 body {
     background-color: #1797A6;
 }
+
 
 #login {
     background-color:#1797A6 ;
@@ -55,3 +58,4 @@ body {
 #emInput {
     margin-top: 15vh;
 }
+
