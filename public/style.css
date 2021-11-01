@@ -1,0 +1,23 @@
+root {
+    --white :#F2F2F2;
+    --darkgreen : #012626;
+    --lightblue :#1797A6;
+    --darkblue:#03738C;
+}
+
+h1 {
+    text-align: center;
+    color:#F2F2F2;
+}
+
+h2 {
+    text-align: center;
+    color:#F2F2F2;
+}
+
+body {
+    background-color: #1797A6;
+}
+
+
+
