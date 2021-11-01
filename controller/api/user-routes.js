@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User } = require('../model');
+const { User } = require('../../model');
 
 
 // GET route that checkes for all user data in the db
