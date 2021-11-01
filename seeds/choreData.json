@@ -1,0 +1,54 @@
+[
+    {
+      "chore": "washing dishes",
+      "value": 10,
+      "description": "washing and drying the dishes"
+    },
+    {
+      "chore": "taking out trash",
+      "value": 15,
+      "description": "taking out trash and recycling"
+    },
+    {
+      "chore": "doing laundry",
+      "value": 10,
+      "description": "cleaning the clothes, folding, and sorting them"
+    },
+    {
+      "chore": "sweep the floors",
+      "value": 10,
+      "description": "remove the dust from the floors"
+    },
+    {
+      "chore": "clean the baseboards",
+      "value": 30,
+      "description": "wiping those baseboards clean"
+    },
+    {
+      "chore": "vacuum",
+      "value": 10,
+      "description": "make sure to suck up all the dirt from those nasty carpets and floors"
+    },
+    {
+      "chore": "dusting",
+      "value": 10,
+      "description": "getting dust off those hard to reach places"
+    },
+    {
+      "chore":"cleaning fans",
+      "value": 15,
+      "description": "keeping the fans clear of dust and grime"
+    },
+    {
+      "chore": "clean room",
+      "value": 5,
+      "description": "clean your own room.  that's it"
+    },
+    {
+      "chore": "set the table",
+      "value": 5,
+      "description": "prepare the table for a meal or for guests"
+    }
+
+]
+
