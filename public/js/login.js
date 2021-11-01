@@ -1,5 +1,3 @@
-const loginBtn = document.getElementById('btnLog');
-
 const loginHandler = async (event) => {
     event.preventDefault();
 
@@ -15,7 +13,7 @@ const loginHandler = async (event) => {
           body: JSON.stringify({ email, password }),
           headers: { 'Content-Type': 'application/json' },
         });
-    
+        console.log(response)
         // response.ok is read-only (true or false) stating whether the res was successful
         if (response.ok) {
           // If successful, redirect the browser to the homepage
@@ -27,4 +25,4 @@ const loginHandler = async (event) => {
     };
 };
 
-loginBtn.addEventListener('click', loginHandler)
+document.getElementById('btnLog').addEventListener('click', loginHandler)
