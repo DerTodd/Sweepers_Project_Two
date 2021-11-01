@@ -1,61 +1,64 @@
 const router = require('express').Router();
 const { User } = require('../model');
 
+// GET route that checkes for all user data in the db
 router.get('/', async (req,res) => {
     try {
         const userData = await User.findAll();
+    //   req.session.save(() => {
+    //   req.session.user_id = userData.id;
+    //   req.session.logged_in = true;
+
+    //   res.status(200).json(userData);
+    // });
         res.status(200).json(userData);
     } catch (err) {
         res.status(500).json(err);
     }
 })
 
-// router.post('/', async (req, res) => {
-//   try {
-//     const userData = await User.create(req.body);
+// POST route for mew users signup
+router.post('/signup', async (req, res) => {
+    try {
+        const createUser = await User.create({
+            username: req.body.username,
+            email: req.body.email,
+            password: req.body.password
+          });
+        res.status(200).json(createUser)
+    } catch (error) {
+        res.status(500).json(err)
+    }
+  });
+  
+// POST route to login user
+router.post('/login', async (req, res) => {
+  try {
+    const userLogin = await User.findOne({ where: { email: req.body.email } });
 
-//     req.session.save(() => {
-//       req.session.user_id = userData.id;
-//       req.session.logged_in = true;
+    if (!userLogin) {
+      res.status(404).json({ message: 'Please try again. Invalid username or password.'});
+      return;
+    }
 
-//       res.status(200).json(userData);
-//     });
-//   } catch (err) {
-//     res.status(400).json(err);
-//   }
-// });
+    const validPassword = await userData.checkPassword(req.body.password);
 
-// router.post('/login', async (req, res) => {
-//   try {
-//     const userData = await User.findOne({ where: { email: req.body.email } });
+    if (!validPassword) {
+      res.status(400).json({ message: 'Please try again. Invalid username or password.'});
+      return;
+    }
 
-//     if (!userData) {
-//       res
-//         .status(400)
-//         .json({ message: 'Incorrect email or password, please try again' });
-//       return;
-//     }
-
-//     const validPassword = await userData.checkPassword(req.body.password);
-
-//     if (!validPassword) {
-//       res
-//         .status(400)
-//         .json({ message: 'Incorrect email or password, please try again' });
-//       return;
-//     }
-
-//     req.session.save(() => {
-//       req.session.user_id = userData.id;
-//       req.session.logged_in = true;
+    req.session.save(() => {
+      req.session.user_id = userData.id;
+      req.session.logged_in = true;
       
-//       res.json({ user: userData, message: 'You are now logged in!' });
-//     });
+      res.json({ user: userData, message: 'You are now logged in!' });
+    });
 
-//   } catch (err) {
-//     res.status(400).json(err);
-//   }
-// });
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
 
 // router.post('/logout', (req, res) => {
 //   if (req.session.logged_in) {
