@@ -8,6 +8,8 @@ root {
 h1 {
     text-align: center;
     color:#F2F2F2;
+    margin-bottom: 20vh;
+    font-family: ;
 }
 
 h2 {
@@ -19,3 +21,37 @@ body {
     background-color: #1797A6;
 }
 
+#login {
+    background-color:#1797A6 ;
+    margin-left: 50vh;
+    margin-right: 50vh;
+}
+
+#email {
+    
+    background-color: white;
+}
+
+#password {
+    
+    background-color:white;
+}
+
+.row .col.s9 {
+    margin-left: 30vh;
+}
+
+#btnLog {
+    padding: 3vh 34vh 3vh 34vh;
+    border-radius: 25px;
+    
+}
+
+#newAcc {
+    padding: 3vh 20vh 3vh 20vh;
+    border-radius: 25px;
+}
+
+#emInput {
+    margin-top: 15vh;
+}
