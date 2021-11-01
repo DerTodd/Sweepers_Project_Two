@@ -1,4 +1,12 @@
 {
+  "name": "Sweepers_Project_Two",
+  "version": "1.0.0",
+  "description": "Keeping it clean and classy Not to dirty and Sassy",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.2",
@@ -8,13 +16,8 @@
     "mysql2": "^2.3.2",
     "sequelize": "^6.8.0"
   },
-  "scripts": {
-    "start": "node server.js"
-  },
-  "name": "sweepers_project_two",
-  "description": "Keeping it clean and classy",
-  "version": "1.0.0",
-  "main": "server.js",
+
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DerTodd/Sweepers_Project_Two.git"
