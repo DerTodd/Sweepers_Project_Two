@@ -10,7 +10,8 @@
     "sequelize": "^6.8.0"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "seed": "node seeds/seed.js"
   },
   "name": "sweepers_project_two",
   "description": "Keeping it clean and classy",
