@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS sweepers_db;
+CREATE DATABASE sweepers_db;
