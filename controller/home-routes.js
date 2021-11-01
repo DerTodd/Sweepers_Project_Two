@@ -1,7 +1,7 @@
 const router = require('express').Router();
-const { User } = require('../model');
+const { User, Chore } = require('../model');
 
-//GET route to display all username of the members
+//GET route to display all username of the members in db
 router.get('/', async (req,res) => {
     try {
         const userData = await User.findAll({
@@ -15,15 +15,15 @@ router.get('/', async (req,res) => {
     }
 })
 
-//GET route to display all names of the chores
+//GET route to display all names of the chores in db
 router.get('/', async (req,res) => {
     try {
         const choreData = await Chore.findAll({
             attributes: [
-                'username'
+                'chore_name'
               ],
         });
-        res.status(200).json(userData);
+        res.status(200).json(choreData);
     } catch (err) {
         res.status(500).json(err);
     }
