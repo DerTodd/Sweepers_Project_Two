@@ -3,6 +3,7 @@ const User = require('./User');
 const Chore = require('./Chore');
 
 
+
 Chore.belongsTo(User, {
     foreignKey: "user_id"
   }),
@@ -25,3 +26,4 @@ module.exports = { User, Chore };
 //   
 //   
 // };
+

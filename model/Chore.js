@@ -5,7 +5,7 @@ class Chore extends Model {}
 
 Chore.init(
   {
-    chore_id: {
+    id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true
