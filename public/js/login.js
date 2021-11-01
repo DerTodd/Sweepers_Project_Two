@@ -27,4 +27,4 @@ const loginHandler = async (event) => {
     };
 };
 
-loginBtn.addEventListener("click", loginHandler)
+loginBtn.addEventListener('click', loginHandler)
