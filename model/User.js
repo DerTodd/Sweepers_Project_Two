@@ -35,6 +35,14 @@ User.init(
         len: [8],
       },
     },
+    status: {
+      type: DataTypes.STRING,
+      allowNullL: false,
+    },
+    points: {
+      type: DataTypes.INTEGER,
+      allowNullL: true,
+    }
   },
   {
     hooks: {

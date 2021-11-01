@@ -19,7 +19,7 @@ router.get('/', async (req,res) => {
 })
 
 
-// POST route for mew users signup
+// POST route for new users signup
 router.post('/signup', async (req, res) => {
     try {
         const createUser = await User.create({
@@ -35,7 +35,7 @@ router.post('/signup', async (req, res) => {
   
 
 // POST route to login user
-router.post('/', async (req, res) => {
+router.post('/login', async (req, res) => {
   try {
     const userLogin = await User.findOne({ where: { username: req.body.username } });
 
