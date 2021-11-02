@@ -17,8 +17,7 @@ const loginHandler = async (event) => {
         // response.ok is read-only (true or false) stating whether the res was successful
         if (response.ok) {
           // If successful, redirect the browser to the homepage
-          console.log('logged in!')
-          // document.location.replace('/homepage');
+          document.location.replace('/homepage');
         } else {
           alert(response.statusText);
         }
