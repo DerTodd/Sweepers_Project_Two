@@ -7,12 +7,12 @@ router.get('/:id', async (req, res) => {
       const userData = await User.findByPk(req.params.id, {
           attributes: ['username'] 
       })
-      if(!userData){
-        res.status(404).json({note: 'No match found with that id.'});
-        return;
-      }else{
-        res.status(200).json(userData);
-      }
+
+      const users = userData.map((user) => user.get({ plain: true }));
+      res.render('homepage', { 
+      users, 
+    });
+
     } catch (err) {
       res.status(500).json(err);
     }
