@@ -1,100 +1,15 @@
-root {
-    --white :#F2F2F2;
-    --darkgreen : #012626;
-    --lightblue :#1797A6;
-    --darkblue:#03738C;
-}
-h1 {
-    text-align: center;
-    color:#F2F2F2;
-<<<<<<< HEAD
-    margin-bottom: 20vh;
-=======
-
-    margin-bottom: 20vh;
-
->>>>>>> 522520ce2e03054579ad38193dd2dbaae24face1
-}
-h2 {
-    text-align: center;
-    color:#F2F2F2;
-}
-body {
-    background-color: #1797A6;
-}
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 522520ce2e03054579ad38193dd2dbaae24face1
-#login {
-    background-color:#1797A6 ;
-    margin-left: 50vh;
-    margin-right: 50vh;
-}
-<<<<<<< HEAD
-#email {
-    background-color: white;
-}
-#password {
-    background-color:white;
-}
-.row .col.s9 {
-    margin-left: 30vh;
-}
-#btnLog {
-    padding: 3vh 34vh 3vh 34vh;
-    border-radius: 25em;
-}
-=======
+.container  {
+    margin-top: 40vh;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
 
-#email {
-    
-    background-color: white;
-}
-
-#password {
-    
-    background-color:white;
-}
-
-.row .col.s9 {
-    margin-left: 30vh;
-}
-
-#btnLog {
-    padding: 3vh 34vh 3vh 34vh;
-    border-radius: 25em;
-    
-}
-
->>>>>>> 522520ce2e03054579ad38193dd2dbaae24face1
-#newAcc {
-    padding: 3vh 20vh 3vh 20vh;
-    border-radius: 25em;
-}
-<<<<<<< HEAD
-#emInput {
-    margin-top: 15vh;
-}
-=======
-
-#emInput {
-    margin-top: 15vh;
-}
-
->>>>>>> 522520ce2e03054579ad38193dd2dbaae24face1
-#signUp {
-    margin-left: 20vh;
-    margin-right: 20vh;
-    background-color: #1797A6;
-<<<<<<< HEAD
-}
-=======
-}
-
-#user_name {
-    background-color: white;
-}
-
->>>>>>> 522520ce2e03054579ad38193dd2dbaae24face1
+  .container .row {
+    margin: 0 auto;
+  }

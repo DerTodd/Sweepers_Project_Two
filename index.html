@@ -12,38 +12,30 @@
 </head>
 
 <body>
-  <h1>Sweeper</h1>
+  <h1 class="center-align">Sweeper</h1>
   <!-- log in-->
-  <div class="card medium" id="login">
-    <form>
-      <h2>username/email</h2>
-      <div class="col s9 input-field">
-        <input id="email" type="email" class="validate">
-        <label for="email"></label>
-        <span class="helper-text" data-error="wrong" data-success="right"></span>
-      </div>
-    </form>
-    <h2>Password</h2>
-    <div class="row">
-      <div class="input-field col s9">
-        <input id="password" type="password" class="validate">
-        <label for="password"></label>
+
+  <div class="container center-align">
+    <div class="row valign-wrapper">
+      <div class="col s12 offset-s0 valign">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title"></span>
+            <input placeholder="Email" id=“email” type=“email” class=“validate”>
+          <label for=“email”></label> <br><br>
+          <input placeholder="Password" id=“password” type=“password” class=“validate”>
+          <label for=“password”></label>
+          </div>
+          <div class="card-action">
+            <button id="btnLog">Login</button> <br>
+            <button data-target="modal1" class="btn modal-trigger" id="newAcc">Create New Account</button>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="col s9">
-        <ul>
-          <button id="btnLog">Login</button>
-        </ul>
-        <ul>
-          <button data-target="modal1" class="btn modal-trigger" id="newAcc">Create New Account</button>
-        </ul>
-      </div>
-    </div>
-
   </div>
-  
+
+
   <!-- Sign up page -->
  <!-- Modal Trigger -->
  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
@@ -61,7 +53,7 @@
  </div>
   <!--<div id="modal1" class="modal">
     <div class="modal-content" id="signUp">-->
-
+  <!--
   <div class="row">
     <form class="col s12">
       <div class="row">
@@ -125,19 +117,8 @@
 
     </form>
   </div>
-  <!--    </div>
+     </div>
   </div>-->
-  <!--Chart Page-->
-  <div class="row">
-    <div class="col s12 m5">
-      <div class="card-panel teal">
-        <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-        I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-        </span>
-      </div>
-    </div>
-
-  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="./public/js/login.js"></script>
