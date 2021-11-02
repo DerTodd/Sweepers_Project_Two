@@ -25,8 +25,4 @@ const signupFormHandler = async (event) => {
   };
   document.getElementById('signup').addEventListener('click', signupFormHandler);
 
-  document.addEventListener('DOMContentLoaded', function () {
-     let elems = document.querySelectorAll('.modal');
-      let instances = M.Modal.init(elems, "");
-  });
   

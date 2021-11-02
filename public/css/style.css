@@ -1,5 +1,6 @@
 .container {
-    margin-top: 15vh;
+
+    margin-top: 10rem;
     display: flex;
     position: absolute;
     top: 0;
@@ -17,18 +18,78 @@
     height: 75% !important;
 }
 
+.card {
+    background-color: #0F9FBF;
+
+}
+
+h1 {
+    color: white;
+    font-family: 'Playball', cursive;
+    font-size: 6rem;
+}
+
+body {
+    background-color: #0F9FBF;
+}
+
 #btnLog {
-    height: 6vh;
-    width: 30vw;
+    border:none;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #F2B705;
+    height: 4rem;
+    width: 25rem;
     margin: 10px;
 }
 
 #newAcc {
-    height: 6vh;
-    width: 30vw;
+    border-radius: 10px 10px 10px 10px;
+    border:none;
+    background-color: #F29F05;
+    color: black;
+    height: 4rem;
+    width: 25rem;
+    margin-bottom: 1rem;
 }
 
-.validate .emailLogin {
-    min-width: 300px;
-    min-height: 30px;
+#btnSignUp {
+    background-color: lightseagreen;
+    margin-right: 15rem;
 }
+
+.input-field {
+    font-size: 36px;
+    margin-top: 2rem;
+    
+}
+
+.card-content {
+    border-bottom: 2px dotted #1B62BF;
+}
+
+
+
+#emailSignUp {
+    
+    border: 2px solid lightseagreen;
+    border-radius: 10px 10px 10px 10px;
+    width: 30rem;
+    
+}
+
+#user_name {
+    border: 2px solid lightseagreen;
+    border-radius: 10px 10px 10px 10px;
+    width: 30rem;
+}
+
+#passwordSignUp {
+    border: 2px solid lightseagreen;
+    border-radius: 10px 10px 10px 10px;
+    width: 30rem;
+}
+
+#Options {
+    margin-left: 15rem;
+}
+

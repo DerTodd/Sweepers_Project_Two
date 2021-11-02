@@ -27,7 +27,7 @@ router.get('/', async (req,res) => {
                 'username'
               ],
         });
-        // res.status(200).json(userData);
+       /* res.status(200).json(userData);*/
 
     // Serialize data so the template can read it
     const users = userData.map((user) => user.get({ plain: true }));
