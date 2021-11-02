@@ -1,6 +1,24 @@
 const router = require('express').Router();
 const { User, Chore } = require('../model');
 
+//Get routes to display username by ID
+router.get('/:id', async (req, res) => {
+    try {
+      const userData = await User.findByPk(req.params.id, {
+          attributes: ['username'] 
+      })
+
+      const users = userData.map((user) => user.get({ plain: true }));
+      res.render('homepage', { 
+      users, 
+    });
+
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+
+
 //GET route to display all usernames of the members in db
 router.get('/', async (req,res) => {
     try {
@@ -34,19 +52,11 @@ router.get('/', async (req,res) => {
                 'description'
               ],
         });
-        const chores = choreData.map((chore) => chore.get({ plain: true }));
-        
-        res.render('homepage', { 
-            chores, 
-        });
-        
-        res.status(200).json(choreData);
 
 
     res.render('homepage', { 
         chores, 
     });
-    
     } catch (err) {
         res.status(500).json(err);
     }

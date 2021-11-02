@@ -6,12 +6,18 @@ const { User } = require('../../model');
 router.get('/', async (req,res) => {
     try {
         const userData = await User.findAll();
-    //   req.session.save(() => {
-    //   req.session.user_id = userData.id;
-    //   req.session.logged_in = true;
+        res.status(200).json(userData);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+})
 
-    //   res.status(200).json(userData);
-    // });
+//GET route that check for user by ID
+router.get('/:id', async (req,res) => {
+    try {
+        const userData = await User.findByPk(req.params.id, {
+          attributes: ['username'] 
+        });
         res.status(200).json(userData);
     } catch (err) {
         res.status(500).json(err);
