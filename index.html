@@ -1,69 +1,135 @@
-root {
-    --white :#F2F2F2;
-    --darkgreen : #012626;
-    --lightblue :#1797A6;
-    --darkblue:#03738C;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-h1 {
-    text-align: center;
-    color:#F2F2F2;
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./public/css/style.css" />
+  <title>Sweeper</title>
+</head>
 
-    margin-bottom: 20vh;
+<body>
+  <h1>Sweeper</h1>
+  <!-- log in-->
+  <div class="card medium" id="login">
+    <form>
+      <h2>username/email</h2>
+      <div class="col s9 input-field">
+        <input id="email" type="email" class="validate">
+        <label for="email"></label>
+        <span class="helper-text" data-error="wrong" data-success="right"></span>
+      </div>
+    </form>
+    <h2>Password</h2>
+    <div class="row">
+      <div class="input-field col s9">
+        <input id="password" type="password" class="validate">
+        <label for="password"></label>
+      </div>
+    </div>
 
-}
+    <div class="row">
+      <div class="col s9">
+        <ul>
+          <button id="btnLog">Login</button>
+        </ul>
+        <ul>
+          <button data-target="modal1" class="btn modal-trigger" id="newAcc">Create New Account</button>
+        </ul>
+      </div>
+    </div>
 
-h2 {
-    text-align: center;
-    color:#F2F2F2;
-}
+  </div>
+  
+  <!-- Sign up page -->
 
-body {
-    background-color: #1797A6;
-}
+  <!--<div id="modal1" class="modal">
+    <div class="modal-content" id="signUp">-->
+
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+
+          <input placeholder="username" id="user_name" type="text" class="validate">
+          <label for="user_name"></label>
+        </div>
+        <form action="#">
+          <p>
+            <label>
+              <input name="group1" type="radio" checked />
+              <span>Admin</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="group1" type="radio" checked />
+              <span>Standard</span>
+            </label>
+          </p>
+        </form>
+        <div class="row">
+          <div class="input-field col s12">
+            <input placeholder="Email" id="email" type="email" class="validate">
+            <label for="email"></label>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+          <label for="disabled">Disabled</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          This is an inline input field:
+          <div class="input-field inline">
+            <input id="email_inline" type="email" class="validate">
+            <label for="email_inline">Email</label>
+            <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Sign Up</a>
+          </div>
+        </div>
+
+    </form>
+  </div>
+  <!--    </div>
+  </div>-->
+  <!--Chart Page-->
+  <div class="row">
+    <div class="col s12 m5">
+      <div class="card-panel teal">
+        <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+        I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+        </span>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./public/js/login.js"></script>
+</body>
 
 
-#login {
-    background-color:#1797A6 ;
-    margin-left: 50vh;
-    margin-right: 50vh;
-}
-
-#email {
-    
-    background-color: white;
-}
-
-#password {
-    
-    background-color:white;
-}
-
-.row .col.s9 {
-    margin-left: 30vh;
-}
-
-#btnLog {
-    padding: 3vh 34vh 3vh 34vh;
-    border-radius: 25em;
-    
-}
-
-#newAcc {
-    padding: 3vh 20vh 3vh 20vh;
-    border-radius: 25em;
-}
-
-#emInput {
-    margin-top: 15vh;
-}
-
-#signUp {
-    margin-left: 20vh;
-    margin-right: 20vh;
-    background-color: #1797A6;
-}
-
-#user_name {
-    background-color: white;
-}
+</html>
+<!--<a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>-->
