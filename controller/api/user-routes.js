@@ -26,7 +26,8 @@ router.get('/:id', async (req,res) => {
 
 
 // POST route for new users signup
-router.post('/signup', async (req, res) => {
+router.post('/login', async (req, res) => {
+  console.log(req.body);
     try {
         const createUser = await User.create({
             username: req.body.username,
@@ -37,7 +38,7 @@ router.post('/signup', async (req, res) => {
     } catch (err) {
         res.status(500).json(err)
     }
-  });
+});
   
 
 // POST route to login user
