@@ -1,0 +1,46 @@
+  <div class="container center-align">
+    <div class="row valign-wrapper">
+      <div class="col s12 offset-s0 valign">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title"></span>
+            <input placeholder="Email" type=“email” class=“validate emailLogin”>
+            <label id="eLogLab" for=“email”></label> <br><br>
+            <input placeholder="Password" id=“passwordLog” type=“password” class=“validate”>
+            <label for=“password”></label>
+          </div>
+          <div class="card-action">
+            <button id="btnLog">Login</button> <br>
+            <button data-target="modal1" class="btn modal-trigger" id="newAcc">Create New Account</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Sign up page -->
+  <!-- Modal Trigger -->
+  
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <input placeholder="Email" id="emailSignUp" type="email" class="validate">
+      <label for="email"></label>
+      <input placeholder="User Name" id="user_name" type="text" class="validate">
+      <label for="user_name"></label>
+      <input placeholder="Password" id="passwordSignUp" type="password" class="validate">
+      <label for="password"></label>
+      <label>
+        <input name="group1" type="radio" checked />
+        <span>Admin</span>
+      </label>
+      <label>
+        <input name="group1" type="radio" checked />
+        <span>Standard</span>
+      </label>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Sign Up</a>
+    </div>
+  </div>
