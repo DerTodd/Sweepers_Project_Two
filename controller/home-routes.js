@@ -29,7 +29,10 @@ router.get('/', async (req,res) => {
     try {
         const choreData = await Chore.findAll({
             attributes: [
-                'chore_name'
+
+                'chore',
+                'value',
+                'description'
               ],
         });
         res.status(200).json(choreData);
