@@ -40,7 +40,14 @@ router.get('/', async (req,res) => {
             chores, 
         });
         
-    res.status(200).json(choreData);
+        res.status(200).json(choreData);
+
+    const chores = choreData.map((chore) => chore.get({ plain: true }));
+
+    res.render('homepage', { 
+        chores, 
+    });
+    
     } catch (err) {
         res.status(500).json(err);
     }
