@@ -1,12 +1,7 @@
 <div class="row">
   <div class="col-auto">
     <h2>Welcome, {{username}}!</h2>
+    {{> login}}
   </div>
 </div>
 
-{{#if !login}}
-{{< login}}
-{{/if}}
-{{#if login}}
-{{< chores}}
-{{/if}}

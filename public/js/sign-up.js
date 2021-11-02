@@ -16,11 +16,11 @@ const signupFormHandler = async (event) => {
         headers: { 'Content-Type': 'application/json' },
       });
   
-      // if (response.ok) {
-      //   document.location.replace('/profile');
-      // } else {
-      //   alert(response.statusText);
-      // }
+      if (response.ok) {
+        document.location.replace('/homepage');
+      } else {
+        alert(response.statusText);
+      }
     }
   };
   document.getElementById('signup').addEventListener('click', signupFormHandler);
