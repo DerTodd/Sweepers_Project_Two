@@ -53,7 +53,7 @@ router.get('/', async (req,res) => {
               ],
         });
 
-    const chores = choreData.map((chore) => chore.get({ plain: true }));
+
     res.render('homepage', { 
         chores, 
     });
