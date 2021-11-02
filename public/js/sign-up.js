@@ -1,30 +1,32 @@
 const signupFormHandler = async (event) => {
     event.preventDefault();
   
-    const name = document.querySelector('#name-signup').value.trim();
-    const email = document.querySelector('#email-signup').value.trim();
-    const password = document.querySelector('#password-signup').value.trim();
-  
-    if (name && email && password) {
-      const response = await fetch('/api/users', {
+    const username = document.getElementById('username').value.trim();
+    const email = document.getElementById('emailSignUp').value.trim();
+    const password = document.getElementById('passwordSignUp').value.trim();
+
+    console.log(username);
+    console.log(email);
+    console.log(password);
+
+    if (username && email && password) {
+      const response = await fetch('/api/signup', {
         method: 'POST',
-        body: JSON.stringify({ name, email, password }),
+        body: JSON.stringify({ username, email, password }),
         headers: { 'Content-Type': 'application/json' },
       });
   
       if (response.ok) {
-        document.location.replace('/profile');
+        document.location.replace('/homepage');
       } else {
         alert(response.statusText);
       }
     }
   };
-  document
-    .querySelector('.signup')
-    .addEventListener('submit', signupFormHandler);
+  document.getElementById('signup').addEventListener('click', signupFormHandler);
 
-    document.addEventListener('DOMContentLoaded', function () {
-       let elems = document.querySelectorAll('.modal');
-        let instances = M.Modal.init(elems, "");
-    });
+  // document.addEventListener('DOMContentLoaded', function () {
+  //    let elems = document.querySelectorAll('.modal');
+  //     let instances = M.Modal.init(elems, "");
+  // });
   

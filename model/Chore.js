@@ -10,7 +10,7 @@ Chore.init(
       primaryKey: true,
       autoIncrement: true
     },
-    chore: {
+    chore_name: {
       type: DataTypes.STRING
     },
     value: {
