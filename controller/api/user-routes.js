@@ -28,7 +28,7 @@ router.post('/signup', async (req, res) => {
             password: req.body.password
           });
         res.status(200).json(createUser)
-    } catch (error) {
+    } catch (err) {
         res.status(500).json(err)
     }
   });

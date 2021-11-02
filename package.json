@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "seed": "node seeds/seed.js"
   },
   "dependencies": {
@@ -13,12 +13,12 @@
     "connect-session-sequelize": "^7.1.2",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
     "express-session": "^1.17.2",
     "handlebars": "^4.7.7",
     "mysql2": "^2.3.2",
     "sequelize": "^6.8.0"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DerTodd/Sweepers_Project_Two.git"
@@ -29,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/DerTodd/Sweepers_Project_Two/issues"
   },
-  "homepage": "https://github.com/DerTodd/Sweepers_Project_Two#readme"
+  "homepage": "https://github.com/DerTodd/Sweepers_Project_Two#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
 }

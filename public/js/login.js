@@ -26,3 +26,8 @@ const loginHandler = async (event) => {
 };
 
 document.getElementById('btnLog').addEventListener('click', loginHandler)
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   let elems = document.querySelectorAll('.modal');
+//   let instances = M.Modal.init(elems, "");
+// });
