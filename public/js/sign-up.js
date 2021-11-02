@@ -10,7 +10,7 @@ const signupFormHandler = async (event) => {
     console.log(password);
 
     if (username && email && password) {
-      const response = await fetch('/api/signup', {
+      const response = await fetch('/api/users/login', {
         method: 'POST',
         body: JSON.stringify({ username, email, password }),
         headers: { 'Content-Type': 'application/json' },
@@ -25,8 +25,8 @@ const signupFormHandler = async (event) => {
   };
   document.getElementById('signup').addEventListener('click', signupFormHandler);
 
-  // document.addEventListener('DOMContentLoaded', function () {
-  //    let elems = document.querySelectorAll('.modal');
-  //     let instances = M.Modal.init(elems, "");
-  // });
+  document.addEventListener('DOMContentLoaded', function () {
+     let elems = document.querySelectorAll('.modal');
+      let instances = M.Modal.init(elems, "");
+  });
   
