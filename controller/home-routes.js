@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { User, Chore } = require('../model');
 
 //Get routes to display username by ID
-router.get('/:id', async (req, res) => {
+router.get('/users/:id', async (req, res) => {
     try {
       const userData = await User.findByPk(req.params.id, {
           attributes: ['username'] 
@@ -52,7 +52,6 @@ router.get('/', async (req,res) => {
                 'description'
               ],
         });
-
 
     res.render('homepage', { 
         chores, 
