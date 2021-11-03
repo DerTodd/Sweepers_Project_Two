@@ -1,3 +1,4 @@
+
 const router = require("express").Router();
 const { User, Chore } = require("../model");
 
@@ -28,6 +29,7 @@ router.get("/", async (req, res) => {
     //res.status(200).json(userData);
 
 
+
     // Serialize data so the template can read it
     const users = userData.map((user) => user.get({ plain: true }));
 console.log(users);
@@ -45,9 +47,11 @@ data.get({ plain: true })
 console.log(choresData);
     // Pass serialized data and session flag into template
 
+
     res.render('choresmain', { 
         users, choresData, 
     logged_in: req.session.logged_in 
+
 
     });
   } catch (err) {

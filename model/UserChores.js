@@ -17,7 +17,8 @@ UserChore.init(
             references: {
                 model: 'user',
                 key: 'id',
-            },
+            }
+
         },
         assign_chore: {
             type: DataTypes.STRING,
