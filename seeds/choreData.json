@@ -1,51 +1,51 @@
 [
     {
-      "chore": "washing dishes",
+      "chore_name": "washing dishes",
       "value": 10,
       "description": "washing and drying the dishes"
     },
     {
-      "chore": "taking out trash",
+      "chore_name": "taking out trash",
       "value": 15,
       "description": "taking out trash and recycling"
     },
     {
-      "chore": "doing laundry",
+      "chore_name": "doing laundry",
       "value": 10,
       "description": "cleaning the clothes, folding, and sorting them"
     },
     {
-      "chore": "sweep the floors",
+      "chore_name": "sweep the floors",
       "value": 10,
       "description": "remove the dust from the floors"
     },
     {
-      "chore": "clean the baseboards",
+      "chore_name": "clean the baseboards",
       "value": 30,
       "description": "wiping those baseboards clean"
     },
     {
-      "chore": "vacuum",
+      "chore_name": "vacuum",
       "value": 10,
       "description": "make sure to suck up all the dirt from those nasty carpets and floors"
     },
     {
-      "chore": "dusting",
+      "chore_name": "dusting",
       "value": 10,
       "description": "getting dust off those hard to reach places"
     },
     {
-      "chore":"cleaning fans",
+      "chore_name":"cleaning fans",
       "value": 15,
       "description": "keeping the fans clear of dust and grime"
     },
     {
-      "chore": "clean room",
+      "chore_name": "clean room",
       "value": 5,
       "description": "clean your own room.  that's it"
     },
     {
-      "chore": "set the table",
+      "chore_name": "set the table",
       "value": 5,
       "description": "prepare the table for a meal or for guests"
     }
