@@ -1,3 +1,12 @@
+<div class="card-action">
+                <label>Users</label>
+                <select class="browser-default">
+                  <option value="" disabled selected>Choose your option</option>
+                 {{#each users as |user|}}
+                  <option value="{{user.id}}">{{user.username}}</option>
+                  
+               {{/each}}
+                </select>
 <div>{{users}}</div>
 <div class="row">
         <div class="col s12 m3">
@@ -15,7 +24,7 @@
                 <label>Users</label>
                 <select class="browser-default">
                   <option value="" disabled selected>Choose your option</option>
-                 {{#each users as |user|}}
+                 {{#each this.users as |user|}}
                   <option value="{{user.id}}">{{user.id}}</option>
                   
                {{/each}}
