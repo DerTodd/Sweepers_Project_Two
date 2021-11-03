@@ -1,24 +1,28 @@
-<div class="row"
-  <div class="col s12 m4 l3 chore-list">
-    <h3>Chore List:</h3>
+<div>{{users}}</div>
+<div class="row">
+        <div class="col s12 m3">
+            {{#each choresData as |chore|}}
+          <div class="card small blue-grey darken-1" id="chore1">
+            <div class="card-content white-text">
+              <span class="card-title">{{chore.chore_name}}</span>
 
-    {{#each choresData as |chore|}}
-    
-        <div class="divider"></div>
-            <div class="section">
-                <h5>{{chore.chore_name}} points: {{chore.value}}</h5>
-                <p>{{chore.description}}</p>
-                <p><a class="waves-effect waves-light btn-small"a-id="{{user.id}}">Assign</a></p>
-            </div>         
-    
-    {{/each}}
-  </div>
-    <div class="col s12 m4 l3 chore-list">
-        <h3>User List:</h3>
-    </div>
-    <div class="col s12 m4 l3 chore-list">
-        <h3>User List:</h3>
-    </div>
-    <div class="col s12 m4 l3 chore-list">
-        <h3>User List:</h3>
-    </div>
+              <p>
+                  {{chore.description}}
+                  
+              </p>
+            </div>
+            <div class="card-action">
+                <label>Users</label>
+                <select class="browser-default">
+                  <option value="" disabled selected>Choose your option</option>
+                 {{#each users as |user|}}
+                  <option value="{{user.id}}">{{user.id}}</option>
+                  
+               {{/each}}
+                </select>
+                <p><a class="waves-effect waves-light btn-small" a-id="{{user.id}}">Assign</a></p>
+            </div>
+          </div>
+        {{/each}}
+        </div>
+      </div>

@@ -24,6 +24,7 @@ router.get('/', async (req,res) => {
     try {
         const userData = await User.findAll({
             attributes: [
+                'id',
                 'username'
               ],
         });
@@ -31,9 +32,9 @@ router.get('/', async (req,res) => {
 
     // Serialize data so the template can read it
     const users = userData.map((user) => user.get({ plain: true }));
-
+        console.log(users);
     // Pass serialized data and session flag into template
-    res.render('homepage', { 
+    res.render('choresmain', { 
         users, 
     // logged_in: req.session.logged_in 
     });
@@ -53,11 +54,11 @@ router.get('/chores', async (req,res) => {
                 'description'
               ],
         });
-        console.log(choreData);
+        //console.log(choreData);
        const choresData = choreData.map((data) =>
         data.get({ plain: true })
         );
-        console.log(choresData);
+        //console.log(choresData);
     res.render('choresmain', { choresData });
     } catch (err) {
         console.log(err)
