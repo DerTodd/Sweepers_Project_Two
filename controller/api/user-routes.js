@@ -26,7 +26,7 @@ router.get('/:id', async (req,res) => {
 
 
 // POST route for new users signup
-router.post('/login', async (req, res) => {
+router.post('/signup', async (req, res) => {
   console.log(req.body);
     try {
         const createUser = await User.create({
@@ -61,7 +61,7 @@ router.post('/login', async (req, res) => {
         res.status(200).json({message: "You are now logged in!"})
     }
 
-    // req.session.save(() => {
+    //   req.session.save(() => {
     //   req.session.user_id = userLogin.id;
     //   req.session.logged_in = true;
       
@@ -69,7 +69,7 @@ router.post('/login', async (req, res) => {
     // });
 
   } catch (err) {
-    res.status(400).json(err);
+    res.status(500).json(err);
   }
 });
 
