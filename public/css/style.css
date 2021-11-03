@@ -93,3 +93,12 @@ body {
     margin-left: 15rem;
 }
 
+/* CSS styling for the users generated */
+#user-list{
+    display: flex;
+}
+.user-list{
+    text-align: center;
+    font-size: 60px;
+    margin-right: 3rem;
+}

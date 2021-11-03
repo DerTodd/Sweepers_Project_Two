@@ -36,28 +36,42 @@ for (let i = 0; i < list_items.length; i++) {
 }
 
 
-// Call usernames form db and renders to the HTML page
-// const userRender = () => {
-//         fetch('/api/users/', {
-//           method: 'GET',
-//           headers: { 'Content-Type': 'application/json' },
-//         }).then(data => {return data.json()}).then(async (response) => {
-//             console.log(response)
-//             let standard = await response.filter(person => {
-//                 return person.status === "standard";
-//             })
-//             console.log(standard)
-//             displayStandard(standard);
-//         });
+//Call usernames form db and renders to the HTML page
+const userRender = () => {
+        fetch('/api/users/', {
+          method: 'GET',
+          headers: { 'Content-Type': 'application/json' },
+        }).then(data => {return data.json()}).then(async (response) => {
+            console.log(response)
+            let standard = await response.filter(person => {
+                return person.status === "standard";
+            })
+            // console.log(standard)
+            displayStandard(standard);
+        });
 
-//     };
-// userRender();
+    };
+userRender();
 
-// const userList = document.getElementById('user-list');
+const userList = document.getElementById('user-list');
 
 // const displayStandard = (arr) => {
 //     arr.forEach(person => {
-//         let el = `<div class="col s12 m4 l3 chore-list list my-list"><h2>${person.username}</h2></div>`;
+//         let el = `<div class="col s12 m4 l3 chore-list list my-list">${person.username}</div>`;
 //        userList.innerHTML += el ;
 //     });
 // }
+
+
+const displayStandard = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+        const person = arr[i];
+        // console.log(person);
+        const mainElement = document.querySelector("main"); 
+        //create a div
+        let el = `<div class="col s12 m4 l3 chore-list user-list list">${person.username}</div>`;
+        el.replace(/['"]+/g, '')
+        console.log(el)
+        mainElement.innerHTML += el
+    }
+}
