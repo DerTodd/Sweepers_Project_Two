@@ -1,7 +1,7 @@
 const signupFormHandler = async (event) => {
     event.preventDefault();
   
-    const username = document.getElementById('username').value.trim();
+    const username = document.getElementById('user_name').value.trim();
     const email = document.getElementById('emailSignUp').value.trim();
     const password = document.getElementById('passwordSignUp').value.trim();
 
@@ -17,7 +17,7 @@ const signupFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace('/homepage');
+        document.location.replace('/chores');
       } else {
         alert(response.statusText);
       }
