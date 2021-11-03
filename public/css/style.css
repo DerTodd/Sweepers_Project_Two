@@ -57,13 +57,13 @@ body {
     margin-right: 15rem;
 }
 
-.input-field {
+.input-field .log {
     font-size: 36px;
     margin-top: 2rem;
     
 }
 
-.card-content {
+.card-content .login {
     border-bottom: 2px dotted #1B62BF;
 }
 
