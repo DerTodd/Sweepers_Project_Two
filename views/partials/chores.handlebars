@@ -1,7 +1,22 @@
 
 
-
 <div class="row"
+  <div class="col s12 m4 l3 chore-list">
+    <h3>Chore List:</h3>
+{{choresData.chore_name}}
+    {{!-- {{#each chores as |chore|}}
+    <div class="divider"></div>
+        <div class="section">
+            <h5>{{chore.chore}} {{chore.value}}</h5>
+            <p>{{chore.description}}</p>
+            <p><a class="waves-effect waves-light btn-small"a-id="{{user.id}}">Assign</a></p>
+        </div>            
+    </div>
+    {{/each}}
+  </div> --}}
+
+
+{{!-- <div class="row"
   {{#if user.status === "administrator"}}
   <div class="col s12 m4 l3 chore-list">
     <h3>Chore List:</h3>
@@ -26,5 +41,5 @@
       {{/each}}
       
   </div>
-</div>
+</div> --}}
 

@@ -2,21 +2,22 @@ const router = require('express').Router();
 const { User, Chore } = require('../model');
 
 //Get routes to display username by ID
-router.get('/users/:id', async (req, res) => {
-    try {
-      const userData = await User.findByPk(req.params.id, {
-          attributes: ['username'] 
-      })
+// router.get('/:id', async (req, res) => {
+//     try {
+//       const userData = await User.findByPk(req.params.id, {
+//           attributes: ['username'] 
+//       })
 
-      const users = userData.map((user) => user.get({ plain: true }));
-      res.render('homepage', { 
-      users, 
-    });
+//       const usersYo = "FredOne";
+//       //userData.map((user) => user.get({ plain: true }));
+//       res.render('homepage', { 
+//       usersYo, 
+//     });
 
-    } catch (err) {
-      res.status(500).json(err);
-    }
-  });
+//     } catch (err) {
+//       res.status(500).json(err);
+//     }
+//   });
 
 
 //GET route to display all usernames of the members in db
@@ -27,10 +28,11 @@ router.get('/', async (req,res) => {
                 'username'
               ],
         });
-       /* res.status(200).json(userData);*/
+        //res.status(200).json(userData);
 
     // Serialize data so the template can read it
-    const users = userData.map((user) => user.get({ plain: true }));
+    const users = "Fred"
+    //userData.map((user) => user.get({ plain: true }));
 
     // Pass serialized data and session flag into template
     res.render('homepage', { 
@@ -43,8 +45,9 @@ router.get('/', async (req,res) => {
 })
 
 //GET route to display all names of the chores in db
-router.get('/', async (req,res) => {
+router.get('/chores', async (req,res) => {
     try {
+        
         const choreData = await Chore.findAll({
             attributes: [
                 'chore',
@@ -53,10 +56,15 @@ router.get('/', async (req,res) => {
               ],
         });
 
-    res.render('homepage', { 
-        chores, 
+       const choresData = choreData.map((data) =>
+        data.get({ plain: true })
+        );
+
+    res.render('chores', { 
+        choresData, 
     });
     } catch (err) {
+        console.log(err)
         res.status(500).json(err);
     }
 })
