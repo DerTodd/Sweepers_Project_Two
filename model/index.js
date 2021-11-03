@@ -7,9 +7,9 @@ User.hasMany(UserChore,{
     foreignKey:'user_id'
 });
 
-// UserChore.belongsTo(User,{
-//     foreignKey:
-// })
+UserChore.belongsTo(User,{
+    foreignKey: 'user_id'
+})
 
 Chore.belongsTo(User,{
     through: UserChore,
