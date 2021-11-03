@@ -1,6 +1,6 @@
 const User = require('./User');
 const Chore = require('./Chore');
-const UserChore = require('./userChores');
+const UserChore = require('./UserChores');
 
 
 User.hasMany(UserChore,{
