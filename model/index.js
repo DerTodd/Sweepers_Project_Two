@@ -17,4 +17,5 @@ Chore.belongsTo(User,{
 });
 
 
+
 module.exports = { User, Chore, UserChore };
