@@ -104,14 +104,6 @@ console.log(users);
         data.get({ plain: true })
         );
         console.log(choresData);
-    res.render('choresmain', { choresData, users });
-    } catch (err) {
-        console.log(err)
-        res.status(500).json(err);
-    }
-})
-router.get('/userchores', async (req,res) => {
-    try {
         const showMe = await User.findAll({
             include: [{ model: Chore, through: UserChore }]
         });
@@ -120,12 +112,28 @@ router.get('/userchores', async (req,res) => {
         data.get({ plain: true })
         );
         console.log(showMeData);
-    res.render('choresmain', { showMeData });
+    res.render('choresmain', { choresData, users, showMeData });
     } catch (err) {
         console.log(err)
         res.status(500).json(err);
     }
 })
+// router.get('/userchores', async (req,res) => {
+//     try {
+//         const showMe = await User.findAll({
+//             include: [{ model: Chore, through: UserChore }]
+//         });
+//         //console.log(showMe);
+//         const showMeData = showMe.map((data) =>
+//         data.get({ plain: true })
+//         );
+//         console.log(showMeData);
+//     res.render('choresmain', { showMeData });
+//     } catch (err) {
+//         console.log(err)
+//         res.status(500).json(err);
+//     }
+// })
 
 
 module.exports = router;

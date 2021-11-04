@@ -28,5 +28,24 @@
     <div class="col s12 m4 l3 chore-list">
         <h3>{{user.username}}:</h3>
     </div>
+    <div>
+        {{#each ../showMeData as |data|}}
+        <ul>
+            <li class="#">{{data.id}}</li>
+            <li class="#">{{data.username}}</li>
+            <li class="#">{{data.email}}</li>
+            <li class="#">{{data.password}}</li>
+            <li class="#">{{data.status}}</li>
+            <li class="#">{{data.points}}</li>
+            <li class="#">{{data.chores}}</li>
+        </ul>
+        <ul>
+            {{#each data.chores as |assigned|}}
+            <li>{{assigned}}</li>
+            {{/each}}
+        </ul>
+        {{/each}}
+    </div>
+
    {{/each}}
     <script src="/js/getChore.js"></script>
