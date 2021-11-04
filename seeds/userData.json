@@ -1,38 +1,37 @@
 [
     {
-      "username": "christa",
+      "username": "Christa",
       "email": "christa@me.com",
       "password": "password123",
       "status": "administrator",
       "points": null
     },
     {
-      "username": "keshav",
+      "username": "Keshav",
       "email": "keshav@me.com",
       "password": "password123",
       "status": "standard",
       "points": 2
     },
     {
-      "username": "stephanie",
+      "username": "Stephanie",
       "email": "stephaine@me.com",
       "password": "password123",
       "status": "standard",
       "points": 9
     },
     {
-      "username": "jamie",
+      "username": "Jamie",
       "email": "jamie@me.com",
       "password": "password123",
       "status": "administrator",
       "points": null
     },
     {
-      "username": "todd",
+      "username": "Todd",
       "email": "todd@me.com",
       "password": "password123",
       "status": "standard",
       "points": 5
     }
 ]
-  
