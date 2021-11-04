@@ -14,14 +14,14 @@ We started with a wireframe of our two pages, our homepage and chore page.  Orig
 Log in page:
 ![Log in wireframe](./assets/img/image.png)
 Signup page:
-![SIgnup wireframe](./assets/img/image(1).png)
+![SIgnup wireframe](./assets/img/image (1).png)
 Admin view of the chore page:
-![Chorepage wireframe]./assets/img/image(2).png)
+![Chorepage wireframe]./assets/img/image (2).png)
 Standard user view of the chore page:
-![standard chorepage wireframe](./assets/img/image(3).png)
+![standard chorepage wireframe](./assets/img/image (3).png)
 
 We also planned the way our databases would interact and created a diagram showing the flow of data.
-![database diagram](./assets/img/database_planning.png)
+![database diagram](./assets/img/database planning.png)
 
 ## Technical Requirements
 
