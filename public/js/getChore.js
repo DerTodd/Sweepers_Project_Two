@@ -1,43 +1,21 @@
-// var washTheDishes = document.getElementById('washTheDishes');
-// document.getElementById("washTheDishes").addEventListener("click", GetSelectedTextValue())
-
-// function GetSelectedTextValue() {
-//     var chore_id=1
-//     selectedElement = document.getElementById(1)
-//     var user_id = selectedElement.value;
-    // alert("user_id: " + user_id);
-    //  if (chore_id && user_id) {
-    //           const response = await fetch('/api/userchore/assignchore', {
-    //             method: 'POST',
-    //             body: JSON.stringify({ chore_id, user_id }),
-    //             headers: { 'Content-Type': 'application/json' },
-    //           });
-          
-    //           if (response.ok) {
-    //             document.location.replace('/chores');
-    //           } else {
-    //             alert(response.statusText);
-    //           }
-    //         }
-      //    };
+          // Creating buttons this way for each chore on the page
           const sendToDB1 = async (event) => {
-            event.preventDefault();
-            alert("YEEHAW");
+            event.preventDefault();;
             const user_id = document.getElementById(1).value;
             const chore_id = 1
-            
-        
-            console.log(user_id);
-            console.log(chore_id);
-            
-        
+
             if (user_id && chore_id) {
               const response = await fetch('/api/userchore/assignchore', {
                 method: 'POST',
-                body: JSON.stringify({ user_id, chore_id }),
-                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  user_id,
+                  chore_id
+                }),
+                headers: {
+                  'Content-Type': 'application/json'
+                },
               });
-          
+
               if (response.ok) {
                 document.location.replace('/chores');
               } else {
@@ -45,24 +23,24 @@
               }
             }
           };
+          // Creating buttons this way for each chore on the page
           const sendToDB2 = async (event) => {
             event.preventDefault();
-            alert("YEEHAW");
             const user_id = document.getElementById(2).value;
             const chore_id = 2
-            
-        
-            console.log(user_id);
-            console.log(chore_id);
-            
-        
+
             if (user_id && chore_id) {
               const response = await fetch('/api/userchore/assignchore', {
                 method: 'POST',
-                body: JSON.stringify({ user_id, chore_id }),
-                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  user_id,
+                  chore_id
+                }),
+                headers: {
+                  'Content-Type': 'application/json'
+                },
               });
-          
+
               if (response.ok) {
                 document.location.replace('/chores');
               } else {
@@ -70,24 +48,25 @@
               }
             }
           };
+          // Creating buttons this way for each chore on the page
           const sendToDB3 = async (event) => {
             event.preventDefault();
-            alert("YEEHAW");
+
             const user_id = document.getElementById(3).value;
             const chore_id = 3
-            
-        
-            console.log(user_id);
-            console.log(chore_id);
-            
-        
+
             if (user_id && chore_id) {
               const response = await fetch('/api/userchore/assignchore', {
                 method: 'POST',
-                body: JSON.stringify({ user_id, chore_id }),
-                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  user_id,
+                  chore_id
+                }),
+                headers: {
+                  'Content-Type': 'application/json'
+                },
               });
-          
+
               if (response.ok) {
                 document.location.replace('/chores');
               } else {
@@ -95,24 +74,25 @@
               }
             }
           };
+          // Creating buttons this way for each chore on the page
           const sendToDB4 = async (event) => {
             event.preventDefault();
-            alert("YEEHAW");
+
             const user_id = document.getElementById(4).value;
             const chore_id = 4
-            
-        
-            console.log(user_id);
-            console.log(chore_id);
-            
-        
+
             if (user_id && chore_id) {
               const response = await fetch('/api/userchore/assignchore', {
                 method: 'POST',
-                body: JSON.stringify({ user_id, chore_id }),
-                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  user_id,
+                  chore_id
+                }),
+                headers: {
+                  'Content-Type': 'application/json'
+                },
               });
-          
+
               if (response.ok) {
                 document.location.replace('/chores');
               } else {
@@ -120,24 +100,25 @@
               }
             }
           };
+          // Creating buttons this way for each chore on the page
           const sendToDB5 = async (event) => {
             event.preventDefault();
-            alert("YEEHAW");
+
             const user_id = document.getElementById(5).value;
             const chore_id = 5
-            
-        
-            console.log(user_id);
-            console.log(chore_id);
-            
-        
+
             if (user_id && chore_id) {
               const response = await fetch('/api/userchore/assignchore', {
                 method: 'POST',
-                body: JSON.stringify({ user_id, chore_id }),
-                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  user_id,
+                  chore_id
+                }),
+                headers: {
+                  'Content-Type': 'application/json'
+                },
               });
-          
+
               if (response.ok) {
                 document.location.replace('/chores');
               } else {
@@ -145,24 +126,25 @@
               }
             }
           };
+          // Creating buttons this way for each chore on the page
           const sendToDB6 = async (event) => {
             event.preventDefault();
-            alert("YEEHAW");
+
             const user_id = document.getElementById(6).value;
             const chore_id = 6
-            
-        
-            console.log(user_id);
-            console.log(chore_id);
-            
-        
+
             if (user_id && chore_id) {
               const response = await fetch('/api/userchore/assignchore', {
                 method: 'POST',
-                body: JSON.stringify({ user_id, chore_id }),
-                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  user_id,
+                  chore_id
+                }),
+                headers: {
+                  'Content-Type': 'application/json'
+                },
               });
-          
+
               if (response.ok) {
                 document.location.replace('/chores');
               } else {
@@ -170,24 +152,25 @@
               }
             }
           };
+          // Creating buttons this way for each chore on the page
           const sendToDB7 = async (event) => {
             event.preventDefault();
-            alert("YEEHAW");
+
             const user_id = document.getElementById(7).value;
             const chore_id = 7
-            
-        
-            console.log(user_id);
-            console.log(chore_id);
-            
-        
+
             if (user_id && chore_id) {
               const response = await fetch('/api/userchore/assignchore', {
                 method: 'POST',
-                body: JSON.stringify({ user_id, chore_id }),
-                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  user_id,
+                  chore_id
+                }),
+                headers: {
+                  'Content-Type': 'application/json'
+                },
               });
-          
+
               if (response.ok) {
                 document.location.replace('/chores');
               } else {
@@ -195,24 +178,24 @@
               }
             }
           };
+          // Creating buttons this way for each chore on the page
           const sendToDB8 = async (event) => {
             event.preventDefault();
-            alert("YEEHAW");
             const user_id = document.getElementById(8).value;
             const chore_id = 8
-            
-        
-            console.log(user_id);
-            console.log(chore_id);
-            
-        
+
             if (user_id && chore_id) {
               const response = await fetch('/api/userchore/assignchore', {
                 method: 'POST',
-                body: JSON.stringify({ user_id, chore_id }),
-                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  user_id,
+                  chore_id
+                }),
+                headers: {
+                  'Content-Type': 'application/json'
+                },
               });
-          
+
               if (response.ok) {
                 document.location.replace('/chores');
               } else {
@@ -220,24 +203,24 @@
               }
             }
           };
+          // Creating buttons this way for each chore on the page
           const sendToDB9 = async (event) => {
             event.preventDefault();
-            alert("YEEHAW");
             const user_id = document.getElementById(9).value;
             const chore_id = 9
-            
-        
-            console.log(user_id);
-            console.log(chore_id);
-            
-        
+
             if (user_id && chore_id) {
               const response = await fetch('/api/userchore/assignchore', {
                 method: 'POST',
-                body: JSON.stringify({ user_id, chore_id }),
-                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  user_id,
+                  chore_id
+                }),
+                headers: {
+                  'Content-Type': 'application/json'
+                },
               });
-          
+
               if (response.ok) {
                 document.location.replace('/chores');
               } else {
@@ -245,24 +228,24 @@
               }
             }
           };
+          // Creating buttons this way for each chore on the page
           const sendToDB10 = async (event) => {
             event.preventDefault();
-            alert("YEEHAW");
             const user_id = document.getElementById(10).value;
             const chore_id = 10
-            
-        
-            console.log(user_id);
-            console.log(chore_id);
-            
-        
+
             if (user_id && chore_id) {
               const response = await fetch('/api/userchore/assignchore', {
                 method: 'POST',
-                body: JSON.stringify({ user_id, chore_id }),
-                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  user_id,
+                  chore_id
+                }),
+                headers: {
+                  'Content-Type': 'application/json'
+                },
               });
-          
+
               if (response.ok) {
                 document.location.replace('/chores');
               } else {
