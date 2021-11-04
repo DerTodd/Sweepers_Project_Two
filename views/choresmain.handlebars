@@ -1,53 +1,37 @@
-
-<div class="row"
-    <div class="col s12 m4 l3 chore-list">
-    <h3>Chore List:</h3>
-    {{#each choresData as |chore|}}
-    
-        <div class="divider"></div>
-            <div class="section">
-                <h5>{{chore.chore_name}} points: {{chore.value}}</h5>
+<div class="row">
+    <div class="col s12 m3 chore-list">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title center-align" id="cardTitle">Chore List</span>
+                {{#each choresData as |chore|}}
+                <h5>{{chore.chore_name}}</h5>
                 <p>{{chore.description}}</p>
-
-                    <label>Give me something to do!</label>
-                    <select class="browser-default" id={{chore.id}}>
+                <p class="center-align" id="points">points: {{chore.value}}</p>
+                <label></label>
+                <select class="browser-default myDrop" id={{chore.id}}>
                     <option value="" disabled selected>Who Wants to Work?</option>
                     {{#each ../users as |user|}}
-	                <option value="{{user.id}}">{{user.username}}</option>
+                    <option value="{{user.id}}">{{user.username}}</option>
                     {{/each}}
-                    </select>
-    <p><input class="waves-effect waves-light btn" id={{chore.button}} type="button" value="Assign" onclick="GetSelectedTextValue()" /></p>
-
-    {{/each}}
+                </select>
+                <p><input class="waves-effect waves-light btn choreBtn" id={{chore.button}} type="button" value="Assign"
+                        onclick="GetSelectedTextValue()" /></p>
+                {{/each}}
             </div>
-    </div> 
-    {{!-- <div>
-    {{showMeData}}
-    </div>       
-  {{#each users as |user|}}
-    <div class="col s12 m4 l3 chore-list">
-        <h3>{{user.username}}:</h3>
+        </div>
     </div>
-    <div>
-        {{#each ../showMeData as |data|}}
-        <ul>
-            <li class="#">{{data.user_id}}</li>
-            <li class="#">{{data.chore.chore_name}}</li>
-            
-        </ul>
-        {{/each}}
-    </div> --}}
-
-   {{!-- {{/each}} --}}
-   <div>
-       {{#each users as |user|}}
-        <h3>{{user.username}}</h3>
-        <ul>
-            {{#each user.chores as |chore|}}
-            <li>{{chore.chore_name}}</li>
-            {{/each}}
-        </ul>
-       {{/each}}
-   </div>
-    <script src="/js/getChore.js"></script>
-
+    {{#each users as |user|}}
+        <div class="card col s12 m3 z-depth-3 center-align" id="maybeNames">            
+            <h3>{{user.username}}</h3>
+            <div id="userCards">
+            <ul>
+                {{#each user.chores as |chore|}}
+                <li class="card center-align listCard">{{chore.chore_name}}
+                <li>
+                {{/each}}
+            </ul>
+            </div>
+        </div>
+    {{/each}}
+</div>
+<script src="/js/getChore.js"></script>
