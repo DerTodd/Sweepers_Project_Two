@@ -1,3 +1,11 @@
+<div>{{users}}</div>
+<div class="row">
+        <div class="col s12 m3">
+            {{#each choresData as |chore|}}
+          <div class="card small blue-grey darken-1" id="chore1">
+            <div class="card-content white-text">
+              <span class="card-title">{{chore.chore_name}}</span>
+
 
 
 <div class="row"
@@ -32,3 +40,4 @@
     {{> dropdown}}
   </div>
   {{/each}}
+
