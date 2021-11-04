@@ -43,7 +43,10 @@ All technical requirements were accomplished for this project. The technical req
 Different levels of user permissions
 Multiple linked databases
 Functional signup and login
-
+Login page:
+![current page](./assets/img/loginpage.PNG)
+Chore chart:
+![current page](./assets/img/chorespage.PNG)
 ## Credits
 - Contributors:
     - Todd Taylor: https://github.com/DerTodd
