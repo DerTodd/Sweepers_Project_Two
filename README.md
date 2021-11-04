@@ -21,7 +21,7 @@ Standard user view of the chore page:
 ![standard chorepage wireframe](./assets/img/image(3).png)
 
 We also planned the way our databases would interact and created a diagram showing the flow of data.
-![database diagram](./assets/img/database_planning.png)
+![database diagram](./assets/img/database.png)
 
 ## Technical Requirements
 
