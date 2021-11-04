@@ -12,7 +12,7 @@ Sweepers is a web based full-stack application designed to help households manag
 ## Planning
 We started with a wireframe of our two pages, our homepage and chore page.  Originally we had separate pages for log in and sign up, but decided a modal for creating accounts was more streamlined for the user.
 Log in page:
-![Log in wireframe](./assets/img/image.jpg)
+![Log in wireframe](./assets/img/image.png)
 Signup page:
 ![SIgnup wireframe](https://github.com/DerTodd/Sweepers_Project_Two/blob/readme-images/assets/img/image%20(1).png?raw=true)
 Admin view of the chore page:
