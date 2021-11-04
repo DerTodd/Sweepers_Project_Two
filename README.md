@@ -14,14 +14,14 @@ We started with a wireframe of our two pages, our homepage and chore page.  Orig
 Log in page:
 ![Log in wireframe](./assets/img/image.png)
 Signup page:
-![SIgnup wireframe](https://github.com/DerTodd/Sweepers_Project_Two/blob/readme-images/assets/img/image%20(1).png?raw=true)
+![SIgnup wireframe](./assets/img/image(1).png)
 Admin view of the chore page:
-![Chorepage wireframe](https://github.com/DerTodd/Sweepers_Project_Two/blob/readme-images/assets/img/image%20(2).png?raw=true)
+![Chorepage wireframe]./assets/img/image(2).png)
 Standard user view of the chore page:
-![standard chorepage wireframe](https://github.com/DerTodd/Sweepers_Project_Two/blob/readme-images/assets/img/image%20(3).png?raw=true)
+![standard chorepage wireframe](./assets/img/image(3).png)
 
 We also planned the way our databases would interact and created a diagram showing the flow of data.
-![database diagram](https://github.com/DerTodd/Sweepers_Project_Two/blob/readme-images/assets/img/database%20planning.PNG?raw=true)
+![database diagram](./assets/img/database_planning.png)
 
 ## Technical Requirements
 
