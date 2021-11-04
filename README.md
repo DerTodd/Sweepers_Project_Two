@@ -1,5 +1,5 @@
 # Sweepers
-![badmath](https://img.shields.io/github/languages/top/DerTodd/Sweepers_Project_Two)
+![license](https://img.shields.io/github/license/DerTodd/Sweepers_Project_Two) ![vulnerabilities shield](https://img.shields.io/snyk/vulnerabilities/github/DerTodd/Sweepers_Project_Two) ![langauges shield](https://img.shields.io/github/languages/count/DerTodd/Sweepers_Project_Two) ![repo size badge](https://img.shields.io/github/repo-size/DerTodd/Sweepers_Project_Two) ![total lines of code](https://img.shields.io/tokei/lines/github/DerTodd/Sweepers_Project_Two) ![open issues](https://img.shields.io/github/issues/DerTodd/Sweepers_Project_Two) ![closed issues](https://img.shields.io/github/issues-closed/DerTodd/Sweepers_Project_Two)
 Live Link: (placeholder)
 Contributors: Todd Taylor, Christa Baccas, Stephanie Cortez, Jaime Martinez, Keshav Krishnan
 ## Description
@@ -85,9 +85,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
-
-
-
-
