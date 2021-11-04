@@ -23,6 +23,11 @@ User.belongsToMany(Chore,{
         unique: false
     },
 });
-
+UserChore.belongsTo(Chore,{
+    foreignKey: 'chore_id'
+});
+Chore.hasMany(UserChore,{
+    foreignKey: 'chore_id'
+})
 
 module.exports = { User, Chore, UserChore };

@@ -21,7 +21,7 @@
     {{/each}}
             </div>
     </div> 
-    <div>
+    {{!-- <div>
     {{showMeData}}
     </div>       
   {{#each users as |user|}}
@@ -31,21 +31,22 @@
     <div>
         {{#each ../showMeData as |data|}}
         <ul>
-            <li class="#">{{data.id}}</li>
-            <li class="#">{{data.username}}</li>
-            <li class="#">{{data.email}}</li>
-            <li class="#">{{data.password}}</li>
-            <li class="#">{{data.status}}</li>
-            <li class="#">{{data.points}}</li>
-            <li class="#">{{data.chores}}</li>
-        </ul>
-        <ul>
-            {{#each data.chores as |assigned|}}
-            <li>{{assigned}}</li>
-            {{/each}}
+            <li class="#">{{data.user_id}}</li>
+            <li class="#">{{data.chore.chore_name}}</li>
+            
         </ul>
         {{/each}}
-    </div>
+    </div> --}}
 
-   {{/each}}
+   {{!-- {{/each}} --}}
+   <div>
+       {{#each users as |user|}}
+        <h3>{{user.username}}</h3>
+        <ul>
+            {{#each user.chores as |chore|}}
+            <li>{{chore.chore_name}}</li>
+            {{/each}}
+        </ul>
+       {{/each}}
+   </div>
     <script src="/js/getChore.js"></script>
