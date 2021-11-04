@@ -1,7 +1,7 @@
 # Sweepers
 ![license](https://img.shields.io/github/license/DerTodd/Sweepers_Project_Two) ![vulnerabilities shield](https://img.shields.io/snyk/vulnerabilities/github/DerTodd/Sweepers_Project_Two) ![langauges shield](https://img.shields.io/github/languages/count/DerTodd/Sweepers_Project_Two) ![repo size badge](https://img.shields.io/github/repo-size/DerTodd/Sweepers_Project_Two) ![total lines of code](https://img.shields.io/tokei/lines/github/DerTodd/Sweepers_Project_Two) ![open issues](https://img.shields.io/github/issues-raw/DerTodd/Sweepers_Project_Two) ![closed issues](https://img.shields.io/github/issues-closed-raw/DerTodd/Sweepers_Project_Two)
 
-Live Link: (placeholder)
+Live Link: https://sweeper-chore-chart.herokuapp.com/
 
 Contributors: Todd Taylor, Christa Baccas, Stephanie Cortez, Jaime Martinez, Keshav Krishnan
 ## Description
