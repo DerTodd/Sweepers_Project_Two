@@ -25,7 +25,7 @@
 
 h1 {
     color: white;
-    font-family: 'Playball', cursive;
+    font-family:'Pacifico';
     font-size: 6rem;
 }
 
@@ -57,13 +57,13 @@ body {
     margin-right: 15rem;
 }
 
-.input-field .log {
+.input-field {
     font-size: 36px;
     margin-top: 2rem;
     
 }
 
-.card-content .login {
+.card-content {
     border-bottom: 2px dotted #1B62BF;
 }
 
@@ -93,3 +93,47 @@ body {
     margin-left: 15rem;
 }
 
+#maybeNames {
+    background-color:rgb(84,110,122);
+    color:white;
+    
+}
+
+#cardTitle {
+    font-size: 40px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid lightseagreen;
+}
+
+.choreBtn {
+    margin-top: .5rem;
+    width: 15rem;
+}
+
+.myDrop {
+    width: 15rem;
+}
+
+#points {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    width: 6rem;
+    border-radius: 25px 25px 25px 25px;
+    background-color: lightseagreen;
+}
+
+h5 {
+    font-size: 30px;
+}
+
+.listCard {
+    color:white;
+    width:10rem;
+    background-color: lightseagreen;
+    margin-left: 4rem;
+}
+
+#userCards {
+    height:60vh;
+    overflow-y: auto;
+}
