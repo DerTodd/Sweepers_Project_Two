@@ -11,11 +11,18 @@ UserChore.belongsTo(User,{
     foreignKey: 'user_id'
 })
 
-Chore.belongsTo(User,{
-    through: UserChore,
-    foreignKey: 'chore_id'
+Chore.belongsToMany(User,{
+    through: {
+        model: UserChore,
+        unique: false
+    },
 });
-
+User.belongsToMany(Chore,{
+    through: {
+        model: UserChore,
+        unique: false
+    },
+});
 
 
 module.exports = { User, Chore, UserChore };

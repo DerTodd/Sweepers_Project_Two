@@ -2,52 +2,62 @@
     {
       "chore_name": "washing dishes",
       "value": 10,
-      "description": "washing and drying the dishes"
+      "description": "washing and drying the dishes",
+      "button": "washTheDishes"
     },
     {
       "chore_name": "taking out trash",
       "value": 15,
-      "description": "taking out trash and recycling"
+      "description": "taking out trash and recycling",
+      "button": "trashy"
     },
     {
       "chore_name": "doing laundry",
       "value": 10,
-      "description": "cleaning the clothes, folding, and sorting them"
+      "description": "cleaning the clothes, folding, and sorting them",
+      "button": "laundryOnTheField"
     },
     {
       "chore_name": "sweep the floors",
       "value": 10,
-      "description": "remove the dust from the floors"
+      "description": "remove the dust from the floors",
+      "button": "witchesWork"
     },
     {
       "chore_name": "clean the baseboards",
       "value": 30,
-      "description": "wiping those baseboards clean"
+      "description": "wiping those baseboards clean",
+      "button": "based"
     },
     {
       "chore_name": "vacuum",
       "value": 10,
-      "description": "make sure to suck up all the dirt from those nasty carpets and floors"
+      "description": "make sure to suck up all the dirt from those nasty carpets and floors",
+      "button": "youSuck"
     },
     {
       "chore_name": "dusting",
       "value": 10,
-      "description": "getting dust off those hard to reach places"
+      "description": "getting dust off those hard to reach places",
+      "button": "fleshRemoval"
     },
     {
       "chore_name":"cleaning fans",
       "value": 15,
-      "description": "keeping the fans clear of dust and grime"
+      "description": "keeping the fans clear of dust and grime",
+      "button": "notAFan"
     },
     {
       "chore_name": "clean room",
       "value": 5,
-      "description": "clean your own room.  that's it"
+      "description": "clean your own room.  that's it",
+      "button": "roomForError"
     },
     {
       "chore_name": "set the table",
       "value": 5,
-      "description": "prepare the table for a meal or for guests"
+      "description": "prepare the table for a meal or for guests",
+      "button": "gameSetMatch"
     }
 
 ]

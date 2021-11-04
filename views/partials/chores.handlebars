@@ -3,43 +3,32 @@
 <div class="row"
   <div class="col s12 m4 l3 chore-list">
     <h3>Chore List:</h3>
-{{choresData.chore_name}}
-    {{!-- {{#each chores as |chore|}}
-    <div class="divider"></div>
-        <div class="section">
-            <h5>{{chore.chore}} {{chore.value}}</h5>
-            <p>{{chore.description}}</p>
-            <p><a class="waves-effect waves-light btn-small"a-id="{{user.id}}">Assign</a></p>
-        </div>            
-    </div>
-    {{/each}}
+{{users}}
+{{choresData}}
+{{letMeHaveIt}}
+
+
+ <div class="input-field col s12">
+    {{!-- <select>
+      <option value="" disabled selected>Choose your option</option>
+      {{#each users as |user|}}
+	    <option value="{{user.id}}">{{user.username}}</option>
+      {{/each}}
+    </select>
+    <label>Materialize Select</label>
   </div> --}}
-
-
-{{!-- <div class="row"
-  {{#if user.status === "administrator"}}
+<div class="row"
   <div class="col s12 m4 l3 chore-list">
     <h3>Chore List:</h3>
 
-    {{#each chores as |chore|}}
-    <div class="divider"></div>
-        <div class="section">
-            <h5>{{chore.chore}} {{chore.value}}</h5>
-            <p>{{chore.description}}</p>
-            <p><a class="waves-effect waves-light btn-small"a-id="{{user.id}}">Assign</a></p>
-        </div>            
-    </div>
-    {{/each}}
+    {{#each choresData as |chore|}}
+    
+        <div class="divider"></div>
+            <div class="section">
+                <h5>{{chore.chore_name}} points: {{chore.value}}</h5>
+                <p>{{chore.description}}</p>
+                        
+    
+    {{> dropdown}}
   </div>
-  {{/if}}
-  <div class="col s12 m4 l3 user-list">
-      {{#each users as |user|}}
-      <div class="section">
-          <h3>{{user.username}}</h3>
-          <h5>Points: {{user.points}}</h5>
-      </div>
-      {{/each}}
-      
-  </div>
-</div> --}}
-
+  {{/each}}

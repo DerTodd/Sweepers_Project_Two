@@ -1,0 +1,7 @@
+<label>User Select</label>
+  <select class="browser-default">
+    <option value="" disabled selected>Choose your option</option>
+    {{#each ../users as |user|}}
+	    <option value="{{user.id}}">{{user.username}}</option>
+      {{/each}}
+  </select>

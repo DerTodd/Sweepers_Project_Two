@@ -66,9 +66,11 @@ const choresData = choreData.map((data) =>
 data.get({ plain: true })
 );
 console.log(choresData);
+const letMeHaveIt = choresData.concat(users)
+console.log(letMeHaveIt)
     // Pass serialized data and session flag into template
     res.render('homepage', { 
-        users, choresData, 
+        users, choresData, letMeHaveIt
     // logged_in: req.session.logged_in 
     });
     } catch (err) {
@@ -79,12 +81,22 @@ console.log(choresData);
 //GET route to display all names of the chores in db
 router.get('/chores', async (req,res) => {
     try {
-        
+        console.log("What up!");
+        const userData = await User.findAll({
+          
+        });
+        console.log(userData)
+        //res.status(200).json(userData);
+    // Serialize data so the template can read it
+    const users = userData.map((user) => user.get({ plain: true }));
+console.log(users);
         const choreData = await Chore.findAll({
             attributes: [
+                'id',
                 'chore_name',
                 'value',
-                'description'
+                'description',
+                'button'
               ],
         });
         console.log(choreData);
@@ -92,11 +104,28 @@ router.get('/chores', async (req,res) => {
         data.get({ plain: true })
         );
         console.log(choresData);
-    res.render('choresmain', { choresData });
+    res.render('choresmain', { choresData, users });
     } catch (err) {
         console.log(err)
         res.status(500).json(err);
     }
 })
+// router.get('/', async (req,res) => {
+//     try {
+//         const showMe = await User.findAll({
+//             include: [{ model: Chore, through: UserChore }]
+//         });
+//         console.log(showMe);
+//         const showMeData = showMe.map((data) =>
+//         data.get({ plain: true })
+//         );
+//         console.log(showMeData);
+//     res.render('homepage', { showMeData });
+//     } catch (err) {
+//         console.log(err)
+//         res.status(500).json(err);
+//     }
+// })
+
 
 module.exports = router;
