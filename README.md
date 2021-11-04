@@ -16,7 +16,7 @@ Log in page:
 Signup page:
 ![SIgnup wireframe](./assets/img/image(1).png)
 Admin view of the chore page:
-![Chorepage wireframe]./assets/img/image(2).png)
+![Chorepage wireframe](./assets/img/image(2).png)
 Standard user view of the chore page:
 ![standard chorepage wireframe](./assets/img/image(3).png)
 
