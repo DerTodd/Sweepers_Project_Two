@@ -18,6 +18,9 @@ Chore.init(
     },
     description: {
       type: DataTypes.STRING
+    },
+    button: {
+      type: DataTypes.STRING
     }
   },
   {

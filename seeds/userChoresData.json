@@ -1,0 +1,21 @@
+[{
+        "user_id": 1,
+        "chore_id": 2
+    },
+    {
+        "user_id": 1,
+        "chore_id": 3
+    },
+    {
+        "user_id": 2,
+        "chore_id": 5
+    },
+    {
+        "user_id": 3,
+        "chore_id": 7
+    },
+    {
+        "user_id": 4,
+        "chore_id": 9
+    }
+]

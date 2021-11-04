@@ -6,6 +6,7 @@
             <div class="card-content white-text">
               <span class="card-title">{{chore.chore_name}}</span>
 
+<<<<<<< HEAD
               <p>
                   {{chore.description}}
                   
@@ -27,3 +28,38 @@
         </div>
       </div>
 
+=======
+
+<div class="row"
+  <div class="col s12 m4 l3 chore-list">
+    <h3>Chore List:</h3>
+{{users}}
+{{choresData}}
+{{letMeHaveIt}}
+
+
+ <div class="input-field col s12">
+    {{!-- <select>
+      <option value="" disabled selected>Choose your option</option>
+      {{#each users as |user|}}
+	    <option value="{{user.id}}">{{user.username}}</option>
+      {{/each}}
+    </select>
+    <label>Materialize Select</label>
+  </div> --}}
+<div class="row"
+  <div class="col s12 m4 l3 chore-list">
+    <h3>Chore List:</h3>
+
+    {{#each choresData as |chore|}}
+    
+        <div class="divider"></div>
+            <div class="section">
+                <h5>{{chore.chore_name}} points: {{chore.value}}</h5>
+                <p>{{chore.description}}</p>
+                        
+    
+    {{> dropdown}}
+  </div>
+  {{/each}}
+>>>>>>> 9c058ed0bae52bb92657f72c1f9456bbbe121c3a
